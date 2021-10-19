@@ -10,13 +10,19 @@
 
 
 
+# if __name__ == "__main__":
+#     str_ = "Hello,world"
+#     meaning = str_[0]
+#     for i in range(len(str_)):
+#         meaning = str_[i]
+#         print(" " * (5 + i), meaning)
+
+
 if __name__ == "__main__":
     str_ = "Hello,world"
-    meaning = str_[0]
-    for i in range(len(str_)):
-        meaning = str_[i]
-
-        print(" " * (5 + i), meaning)
+    for spaces, meaning in enumerate(str_):
+        spaces = " " * (5 + spaces) #не очень понимаю, как это сработало!!!
+        print(spaces, meaning)
 
 #постарайтесь не использовать "магические" числа,
 # а по возможности дать переменным осмысленные названия и использовать их
