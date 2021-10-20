@@ -5,7 +5,7 @@ def factorial (n):
         current_number += 1
         fact *= current_number
 
-    return current_number
+    return fact
 
 if __name__ == "__main__":
     print(factorial(7))
