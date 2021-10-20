@@ -3,14 +3,14 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 0
-    length: 353
+  - offset: 996
+    length: 34
     placeholder_text: '# TODO Распечатать строку лесенкой'
     initial_state:
       length: 34
       offset: 164
     initialized_from_dependency: false
-    selected: true
+    selected: false
     status: Failed
     encrypted_possible_answer: '...'
   text: |
@@ -28,17 +28,17 @@ files:
 status: Failed
 feedback:
   message: Incorrect
-  time: Sun, 17 Oct 2021 19:25:40 UTC
+  time: Wed, 20 Oct 2021 17:25:46 UTC
   actual: |2
-          H
-           e
+         H
+          e
+           l
             l
-             l
-              o
-               ,
-                w
-                 o
-                  r
-                   l
-                    d
+             o
+              ,
+               w
+                o
+                 r
+                  l
+                   d
 record: -1

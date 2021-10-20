@@ -3,7 +3,7 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 408
+  - offset: 126
     length: 63
     placeholder_text: '# TODO посчитать количество четных и нечетных значений в списке'
     initial_state:
@@ -35,7 +35,5 @@ files:
   visible: false
   learner_created: false
 status: Solved
-feedback:
-  time: Sun, 17 Oct 2021 19:49:35 UTC
 record: -1
 post_submission_on_open: true

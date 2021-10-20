@@ -20,13 +20,15 @@
 
 if __name__ == "__main__":
     str_ = "Hello,world"
-    for spaces, meaning in enumerate(str_):
-        spaces = " " * (5 + spaces) #не очень понимаю, как это сработало!!!
-        print(spaces, meaning)
+    offset = 5
+    for spaces, meaning in enumerate(str_, start=offset):
+        spaces = " " * spaces #не очень понимаю, как это сработало!!!
+        print(spaces + meaning)
+        # print(spaces, meaning, sep="")
 
 #постарайтесь не использовать "магические" числа,
 # а по возможности дать переменным осмысленные названия и использовать их
 # TODO Распечатать строку лесенкой
 
 # как решить через enumerate?
-# как называется один шаг в цикле?
+# как называется один шаг в цикле? - итерация

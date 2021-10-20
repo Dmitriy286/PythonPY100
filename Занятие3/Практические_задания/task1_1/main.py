@@ -2,13 +2,13 @@
 def add_func(a, b):
     # a и b аргументы, которые принимает функция
     # эти аргументы будут не доступны вне тела функции
-    add = a + b
+    return a + b
 
     # чтобы вернуть результат нужно использовать ключевое слово return
-    return add
+    # return add
 
 
 if __name__ == "__main__":
-    result = ...  # TODO вызвать функцию
+    # result = add_func (5, 10)  # TODO вызвать функцию
 
-    print(result)
+    print(add_func (5, 10))

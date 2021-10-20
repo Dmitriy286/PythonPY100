@@ -6,5 +6,6 @@ def square_circle(r):
 
 
 if __name__ == "__main__":
-    square = square_circle(5)
-    print(square)
+    # square = square_circle(5)
+    # print(square)
+    print(square_circle(5))
