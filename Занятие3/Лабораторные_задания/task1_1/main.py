@@ -32,30 +32,52 @@
 #         if global_current_value == max(a):
 #             print("Количество чисел составляет: ", i)
 
-# Второй вариант:
+# # Второй вариант:
+# def task_1_1():
+#     max_sum = 500
+#     current_sum = 0
+#     n = 1
+#
+#     while True:
+#         print(n)
+#         current_value = n ** 2 # ПОЧЕМУ ЭТО ДОЛЖНО СТОЯТЬ ЗДЕСЬ?
+#         print(current_value)
+#         if ((max_sum - current_sum) ** 0.5 - n) <= 1:
+#
+#             print(max_sum)
+#             print("-----")
+#             print(current_sum)
+#             print("-----")
+#             print(n)
+#             print("-----")
+#             break
+#         else:
+#             # print(current_value, current_sum, n)
+#             current_sum += current_value
+#             n = n + 1
+#             # print(current_value, current_sum, n)
+#     return n
+#
+# if __name__ == "__main__":
+#     # a = task_1_1()
+#     # print(a)
+#     print(task_1_1())
+
+# вариант 3
 def task_1_1():
     max_sum = 500
     current_sum = 0
-    n = 1
+    n = 0
+    # current_value = n ** 2
+    while ((max_sum - current_sum) ** 0.5 - n) > 1:
+        n = n + 1
+        current_value = n ** 2 #почему здесь???
+        current_sum += current_value
 
-    while True:
         print(n)
-        current_value = n ** 2 # ПОЧЕМУ ЭТО ДОЛЖНО СТОЯТЬ ЗДЕСЬ?
         print(current_value)
-        if ((max_sum - current_sum) ** 0.5 - n) <= 1:
+        print(current_sum)
 
-            print(max_sum)
-            print("-----")
-            print(current_sum)
-            print("-----")
-            print(n)
-            print("-----")
-            break
-        else:
-            # print(current_value, current_sum, n)
-            current_sum += current_value
-            n = n + 1
-            # print(current_value, current_sum, n)
     return n
 
 if __name__ == "__main__":
