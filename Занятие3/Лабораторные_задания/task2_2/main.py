@@ -1,18 +1,22 @@
 def palindrome(str_):
-
-    str_2 = str_[::-1]
-    print(str_)
-    print(str_2)
     str_ = str_.split()
-    print(str_)
     str_ = "".join(str_)
+
+    str_ == str_[::-1]
     print(str_)
-    str_2 = str_2.split()
     print(str_2)
-    str_2 = "".join(str_2)
-    print(str_2)
-    print(str_[0])
-    print(str_2[0])
+
+
+    # str_ = str_.split()
+    # print(str_)
+    # str_ = "".join(str_)
+    # print(str_)
+    # str_2 = str_2.split()
+    # print(str_2)
+    # str_2 = "".join(str_2)
+    # print(str_2)
+    # print(str_[0])
+    # print(str_2[0])
     k = 0
     a = 0
     b = 0
@@ -31,6 +35,7 @@ def palindrome(str_):
             # print("Печатаю b", b)
             # print(a, c)
             break
+
     return a, c
 
 def max_min(q, w):
