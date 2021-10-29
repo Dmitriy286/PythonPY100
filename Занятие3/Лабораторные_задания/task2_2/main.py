@@ -19,25 +19,29 @@ def palindrome(str_):
     c = len(str_)
     for i in str_:
         if str_[k] == str_2[k]:
-            k += 1
+
             a += 1
             # print("Palindrome")
             print("Печатаю a", a)
-
+            k += 1
+            print("Печатаю k", k)
         else:
-            b +=1
-            # print("Not Palindrome")
-            print("Печатаю b", b)
+            # b +=1
+            print("Not Palindrome")
+            # print("Печатаю b", b)
+            # print(a, c)
+            break
+    return a, c
 
-        return a, c
-
-def max_min(a, c):
-    if a == c:
+def max_min(q, w):
+    if q == w:
         print("Palindrome")
     else:
         print("Not Palindrome")
 
 if __name__ == "__main__":
-    palindrome(input("Enter string: "))
-    max_min(a, c)
+    q, w = palindrome(input("Enter string: "))
+
+    print(q, w)
+    max_min(q, w)
 # я иду с мечем судия
