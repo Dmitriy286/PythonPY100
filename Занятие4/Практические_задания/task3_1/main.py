@@ -5,8 +5,12 @@ if __name__ == "__main__":
         "banana": 40
     }
 
-    # TODO посчитать через ключи
-    for fruit in cart:
-        print(cart[fruit])  # получаем значение по ключу
 
-    # TODO посчитать через метод values
+    sum_ = 0
+    for fruit in cart:
+        sum_ += cart[fruit]
+    print(sum_)  # получаем значение по ключу
+
+
+    print(sum(cart.values()))
+    print(cart.items())
