@@ -1,6 +1,6 @@
 def func():
     number = int(input("Enter number: "))
-    print(list(str(number)))
+    list_ =
 
 
 if __name__ == "__main__":
