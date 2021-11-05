@@ -45,11 +45,10 @@ def new_one():
 
 def dict_change():
     total_count = sum(dict_1.values())
-    dict_2 = {dict_2[key], (counts / total_count) * 100 for key, counts in dict_1.items()}
-    return {char: round(value / total_count, 3) for char, value in char_dict.items()}
+    dict_2 = {key: (counts / total_count) * 100 for key, counts in dict_1.items()}
+    # return {char: round(value / total_count, 3) for char, value in char_dict.items()}
 
-
-for key, counts in dict_2.items():
+    for key, counts in dict_2.items():
         print(key, counts)
 
 
